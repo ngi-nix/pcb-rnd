@@ -14,7 +14,7 @@
       version = "3.0.0";
 
       # System types to support.
-      supportedSystems = [ "x86_64-linux" ];
+      supportedSystems = [ "x86_64-linux" "x86_64-darwin" ];
 
       # Helper function to generate an attrset '{ x86_64-linux = f "x86_64-linux"; ... }'.
       forAllSystems = f: nixpkgs.lib.genAttrs supportedSystems (system: f system);
