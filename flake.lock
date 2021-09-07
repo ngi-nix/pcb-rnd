@@ -1,34 +1,47 @@
 {
   "nodes": {
+    "librnd-src": {
+      "flake": false,
+      "locked": {
+        "narHash": "sha256-neuIUS3L4zM3KIEbiFuZjdAoBTqooIp1u9nO+hwSYYw=",
+        "type": "tarball",
+        "url": "http://repo.hu/projects/librnd/releases/librnd-3.0.0.tar.bz2"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "http://repo.hu/projects/librnd/releases/librnd-3.0.0.tar.bz2"
+      }
+    },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1588027483,
-        "narHash": "sha256-DcNFRegA72g1fmVWp+kFxxD4JuAwwM7XjYy0ebRa56U=",
+        "lastModified": 1629048390,
+        "narHash": "sha256-do7HuXFSKyj4ulMlRvGigNZCqOaGD9i0M3OLkFQgEAc=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2faa76db27c4a8045d050d9b390dbb2249b0f3c0",
+        "rev": "e41ba38114055832e5ba4a851e9c00149eef3e4a",
         "type": "github"
       },
       "original": {
         "id": "nixpkgs",
-        "ref": "nixos-20.03",
+        "ref": "nixos-unstable",
         "type": "indirect"
       }
     },
     "pcb-rnd-src": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-Q9SFmi7XjV297qSfH/fNdqO9vw6FtCF7Y6n6GRNEzIg=",
+        "narHash": "sha256-zC5qrXt8PPr7bQkv8XCxhHQNUvAbteQC32q2n6teCrw=",
         "type": "tarball",
-        "url": "http://repo.hu/projects/pcb-rnd/releases/pcb-rnd-2.2.3.tar.bz2"
+        "url": "http://repo.hu/projects/pcb-rnd/releases/pcb-rnd-3.0.0.tar.bz2"
       },
       "original": {
         "type": "tarball",
-        "url": "http://repo.hu/projects/pcb-rnd/releases/pcb-rnd-2.2.3.tar.bz2"
+        "url": "http://repo.hu/projects/pcb-rnd/releases/pcb-rnd-3.0.0.tar.bz2"
       }
     },
     "root": {
       "inputs": {
+        "librnd-src": "librnd-src",
         "nixpkgs": "nixpkgs",
         "pcb-rnd-src": "pcb-rnd-src"
       }
